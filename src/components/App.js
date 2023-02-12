@@ -23,7 +23,7 @@ const App = () => {
   const handleOnClick = () => {
     setIsLoading(LoadingStatus.IN_PROGRESS);
     setTimeout(() => {
-      fetch(1${BASE_URL}/${userID}`)
+      fetch(`${BASE_URL}/${userID}`)
       .then((res) => res.json())
       .then((data) => {
         setUserData(data);
